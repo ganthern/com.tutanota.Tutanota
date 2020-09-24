@@ -52,10 +52,10 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tutao/tutanota.git",
-		    "tag": "tutanota-release-3.50.10",
-                    "commit": "178c9b7dbe5cc67fc646e05badba3f310be9f747"
+		    "tag": "tutanota-release-3.76.9",
+                    "commit": "826d1506649e91504e83bc3060da5049c9fcf245"
                 },
-		{
+ 		{
 		    "type": "patch",
 		    "path": "dist.patch"
 		},

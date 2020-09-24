@@ -2,7 +2,7 @@
 
 set -eu
 
-TAG=tutanota-release-3.50.10
+TAG=tutanota-release-3.76.9
 
 export cache="${PWD}/generate-cache"
 rm -rf "${cache}"
@@ -16,6 +16,6 @@ patch -p1 <../generate.patch
 python3 ../flatpak-npm-generator.py package-lock.json -o ../generated-sources.json
 npm install
 export npm_config_cache="${cache}"
-node dist release -l
+node dist --unpacked --custom-desktop-release
 python3 ../flatpak-npm-generator.py build/dist/package-lock.json -o ../dist-generated-sources.json
 cp build/dist/package-lock.json ..
